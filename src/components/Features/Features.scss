@@ -1,0 +1,20 @@
+.features {
+    background-color: #F6F5F3;
+
+    @media (min-width: 768px) {
+        background-image: url("../../images/penHolder.png"), url("../../images/earphones.png");
+        background-repeat: no-repeat;
+        background-position: 0 -15px, top -10px right 50px;
+        background-size: auto, 175px;
+    }
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+}

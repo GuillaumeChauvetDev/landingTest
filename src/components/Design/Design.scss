@@ -1,0 +1,22 @@
+.design {
+    display: flex;
+    flex-direction: column;
+
+    &__info,
+    &__image { min-width: 100%; }
+
+    &__info { margin-bottom: 25px; }
+    
+    &__image img { width: 100%; }
+    
+    @media (min-width:768px) {
+        flex-direction: row;
+
+        &.reverse { flex-direction: row-reverse; }
+
+        &__info { margin-bottom: 0; }
+
+        &__info,
+        &__image { min-width: 50%; }
+    }
+}

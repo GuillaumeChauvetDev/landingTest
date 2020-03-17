@@ -1,0 +1,30 @@
+@import '../../colors.scss';
+
+.title {
+    margin-bottom: 80px;
+
+    &--center { text-align: center; }
+    &--white &__title { color: #ffffff; }
+
+    &--ellipsis &__title::after {
+        content: ' ...';
+        color: $orange;
+    }
+
+    &__title,
+    &__suptitle {
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+
+    &__title {
+        font-size: 40px;
+        color: $black;
+    }
+
+    &__suptitle {
+        font-size: 16px;
+        color: $orange;
+        text-transform: uppercase;
+    }
+}
